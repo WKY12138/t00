@@ -1,0 +1,60 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style>
+			.carousel-indicators li{
+				width: 0.8rem;
+				height:  0.8rem;
+				border-radius:50%;
+				margin: 0 0.3rem;
+			}
+			.carousel-indicators .active{
+				background-color:#0aaede;
+			}
+			.carousel-control-prev,
+			.carousel-control-next{
+				width: 4%;
+				height: 20%;
+				background-color: #aaa;
+				border-radius: 0.25rem;
+				top: 40%;
+			}
+			.carousel-control-prev{left:0.25rem;}
+			.carousel-control-next{right: 0.25rem;}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h4>轮播图</h4>
+			<div id="demo" data-ride="carousel" class="carousel">
+				<!-- 轮播的图片 -->
+				<div class="carousel-inner">
+					<div class="carousel-item active"><a href=""><img class="w-100" src="banner1.png"></a></div>
+					<div class="carousel-item"><a href=""><img class="w-100" src="banner2.png"></a></div>
+					<div class="carousel-item"><a href=""><img class="w-100" src="banner3.png"></a></div>
+					<div class="carousel-item"><a href=""><img class="w-100" src="banner4.png"></a></div>
+				</div>
+				<!-- 轮播指示器 -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+					<li data-target="#demo" data-slide-to="3"></li>
+				</ul>
+				<!-- 轮播的剪头 -->
+				<a data-slide="next" class="carousel-control-next" href="#demo">
+					<sqan class="carousel-control-next-icon"></sqan>
+				</a>
+				<a data-slide="prev" class="carousel-control-prev" href="#demo">
+					<sqan class="carousel-control-prev-icon"></sqan>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
